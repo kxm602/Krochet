@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patterns | Krochet & Krafts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="page">
+      <header class="top-nav">
+        <div class="nav-shell">
+          <a class="brand" href="index.html" aria-label="Krochet home">
+            <span class="logo-crop">
+              <img class="logo-mark" src="logo.png" alt="Krochet logo" />
+            </span>
+            <span class="brand-name">Krochet</span>
+          </a>
+
+          <nav aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="patterns.html">Patterns</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="social.html">Social</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <span class="eyebrow">Pattern library</span>
+          <h1>Pick your next crochet pattern</h1>
+          <p>
+            Start simple with beginner-friendly projects, or browse seasonal ideas
+            and cozy gifts you can finish in a weekend.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#">Beginner Patterns</a>
+            <a class="btn" href="#">Saved Patterns</a>
+          </div>
+        </section>
+
+        <section class="home-cards" aria-label="Pattern categories">
+          <article class="card tone-sage">
+            <h3>Hats & Beanies</h3>
+            <p>Quick projects perfect for gifts and cool-weather practice.</p>
+          </article>
+          <article class="card tone-rose">
+            <h3>Blankets</h3>
+            <p>Chunky and classic blanket ideas with easy-to-follow steps.</p>
+          </article>
+          <article class="card tone-mist">
+            <h3>Amigurumi</h3>
+            <p>Small plush patterns for playful shapes and color experiments.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

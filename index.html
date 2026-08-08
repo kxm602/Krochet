@@ -1,35 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crochet & Crafts</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
-      background: #fdf6f0;
-      color: #3d2b1f;
-    }
-    h1 { color: #a0522d; }
-    nav a {
-      margin-right: 1rem;
-      color: #a0522d;
-      text-decoration: none;
-    }
-    nav a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="patterns.html">Patterns</a>
-    <a href="about.html">About</a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krochet & Krafts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="page">
+      <header class="top-nav">
+        <div class="nav-shell">
+          <a class="brand" href="index.html" aria-label="Krochet home">
+            <span class="logo-crop">
+              <img class="logo-mark" src="logo.png" alt="Krochet logo" />
+            </span>
+            <span class="brand-name">Krochet</span>
+          </a>
 
-  <h1>Welcome to My Crochet Corner</h1>
-  <p>A cozy space for crochet patterns, tips, and inspiration.</p>
-</body>
+          <nav aria-label="Primary">
+            <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="patterns.html">Patterns</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="social.html">Social</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <span class="eyebrow">Learn how to crochet</span>
+          <p class="hero-subtitle">
+            Tap any lesson to open a step-by-step guide with photos and a final
+            video walkthrough.
+          </p>
+
+          <div class="howto-grid" aria-label="Crochet lesson shortcuts">
+            <button class="howto-btn" type="button" data-tutorial="foundation-chain">
+              <span class="howto-title">Foundation Chain</span>
+              <span class="howto-note">Start with a neat chain base.</span>
+            </button>
+            <button class="howto-btn" type="button" data-tutorial="single-crochet">
+              <span class="howto-title">Single Crochet (SC)</span>
+              <span class="howto-note">Learn your first core stitch.</span>
+            </button>
+            <button class="howto-btn" type="button" data-tutorial="double-crochet">
+              <span class="howto-title">Double Crochet (DC)</span>
+              <span class="howto-note">Create taller and airy rows.</span>
+            </button>
+            <button class="howto-btn" type="button" data-tutorial="treble-crochet">
+              <span class="howto-title">Treble Crochet (TC)</span>
+              <span class="howto-note">Add extra height to stitches.</span>
+            </button>
+            <button class="howto-btn" type="button" data-tutorial="magic-ring">
+              <span class="howto-title">Magic Ring</span>
+              <span class="howto-note">Begin circles with a tight center.</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="home-cards" aria-label="Home quick sections">
+          <article class="card tone-sage">
+            <h3>Patterns</h3>
+            <p>Browse simple, sorted patterns by style and skill level.</p>
+          </article>
+          <article class="card tone-rose">
+            <h3>Projects</h3>
+            <p>Track your rows, notes, and yarn details for each piece.</p>
+          </article>
+          <article class="card tone-mist">
+            <h3>Social</h3>
+            <p>Share progress photos and get inspired by other crocheters.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>
