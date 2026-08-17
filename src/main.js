@@ -274,11 +274,21 @@ function loadAllPatterns() {
             return response.json();
         })
         .then((patterns) => {
-            const patternsById = new Map(patterns.map((pattern) => [pattern.id, pattern]));
-            for (const pattern of loadCustomPatterns()) {
-                patternsById.set(pattern.id, pattern);
+            const repositoryPatterns = patterns.map((pattern) => ({
+                ...pattern,
+                isCustom: false,
+            }));
+            const repositoryIds = new Set(repositoryPatterns.map((pattern) => pattern.id));
+            const storedPatterns = loadCustomPatterns();
+            const browserOnlyPatterns = storedPatterns
+                .filter((pattern) => !repositoryIds.has(pattern.id))
+                .map((pattern) => ({ ...pattern, isCustom: true }));
+
+            if (browserOnlyPatterns.length !== storedPatterns.length) {
+                saveCustomPatterns(browserOnlyPatterns);
             }
-            return [...patternsById.values()];
+
+            return [...browserOnlyPatterns, ...repositoryPatterns];
         });
 }
 
@@ -440,7 +450,9 @@ function patternCardTemplate(pattern) {
         .join("");
 
     const imageUrl = getSafePatternImageUrl(pattern.image);
-    const imageDataAttr = imageUrl ? ` data-pattern-image="${escapeHtml(imageUrl)}"` : "";
+    const imageMarkup = imageUrl
+        ? `<img class="pattern-card-image" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(pattern.title)}" loading="lazy" />`
+        : '<div class="pattern-card-image pattern-card-image-placeholder" aria-hidden="true"></div>';
     const customActions = pattern.isCustom
         ? `
                 <div class="pattern-owner-actions" aria-label="Manage ${escapeHtml(pattern.title)}">
@@ -451,23 +463,20 @@ function patternCardTemplate(pattern) {
         : "";
 
     return `
-        <article class="pattern-card"${imageDataAttr}>
-            <div class="pattern-card-body">
+        <article class="pattern-card">
+            <div class="pattern-card-media">
+                ${imageMarkup}
                 ${customActions}
-                <header class="pattern-head">
+                <header class="pattern-head pattern-card-heading">
                     <h3>${escapeHtml(pattern.title)}</h3>
                     <span class="pattern-pill">${escapeHtml(pattern.difficulty)}</span>
                 </header>
-                <p class="pattern-meta">
-                    <strong>${escapeHtml(pattern.category)}</strong> • ${escapeHtml(pattern.yarnWeight)} yarn
-                </p>
-                <p class="pattern-desc">${escapeHtml(pattern.description)}</p>
+            </div>
+            <div class="pattern-card-footer">
                 <div class="pattern-tags">${tags}</div>
-                <p class="pattern-source">Source: ${escapeHtml(pattern.sourceName)}</p>
                 <button class="btn pattern-open" type="button" data-pattern-id="${escapeHtml(pattern.id)}">
                     View Pattern Steps
                 </button>
-                <p class="pattern-license">${escapeHtml(pattern.licenseNote)}</p>
             </div>
         </article>
     `;
@@ -1127,11 +1136,11 @@ function initPatternsPage() {
                 patternsGrid.innerHTML = filtered.map(patternCardTemplate).join("");
                 empty.hidden = filtered.length > 0;
 
-                for (const card of patternsGrid.querySelectorAll(".pattern-card[data-pattern-image]")) {
-                    const imageUrl = getSafePatternImageUrl(card.dataset.patternImage);
-                    if (imageUrl) {
-                        card.style.setProperty("--pattern-image", `url(\"${imageUrl}\")`);
-                    }
+                for (const image of patternsGrid.querySelectorAll(".pattern-card-image:not(.pattern-card-image-placeholder)")) {
+                    image.addEventListener("error", () => {
+                        image.classList.add("pattern-card-image-placeholder");
+                        image.removeAttribute("src");
+                    });
                 }
 
                 for (const button of patternsGrid.querySelectorAll(".pattern-open")) {
