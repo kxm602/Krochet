@@ -1,6 +1,22 @@
 import foundationChainStep1 from "./assets/foundationChainStep1.jpeg";
 import foundationChainStep2 from "./assets/foundationChainStep2.jpeg";
 import foundationChainStep3 from "./assets/foundationChainStep3.jpeg";
+import sc1 from "./assets/sc1.png";
+import sc2 from "./assets/sc2.png";
+import sc3 from "./assets/sc3.png";
+import dc1 from "./assets/dc1.png";
+import dc2 from "./assets/dc2.png";
+import dc3 from "./assets/dc3.png";
+import dc4 from "./assets/dc4.png";
+import tr1 from "./assets/tr1.png";
+import tr2 from "./assets/tr2.png";
+import tr3 from "./assets/tr3.png";
+import mr1 from "./assets/mr1.png";
+import mr2 from "./assets/mr2.png";
+import mr3 from "./assets/mr3.png";
+import mr4 from "./assets/mr4.png";
+import mr5 from "./assets/mr5.png";
+
 
 const app = document.querySelector("#app");
 const howToButtons = document.querySelectorAll(".howto-btn");
@@ -47,20 +63,17 @@ const tutorials = {
             {
                 title: "Step 1: Insert hook",
                 description: "Insert your hook into the next stitch from front to back.",
-                image:
-                    "https://images.unsplash.com/photo-1596722554383-1f9d4c75b121?auto=format&fit=crop&w=900&q=80",
+                image: sc1,
             },
             {
                 title: "Step 2: Yarn over and pull up a loop",
                 description: "Yarn over, pull through the stitch. You now have two loops on the hook.",
-                image:
-                    "https://images.unsplash.com/photo-1611391182214-cc7d4ba40682?auto=format&fit=crop&w=900&q=80",
+                image: sc2,
             },
             {
                 title: "Step 3: Yarn over and finish",
                 description: "Yarn over again and pull through both loops on your hook.",
-                image:
-                    "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=900&q=80",
+                image: sc3,
             },
         ],
         video: "https://youtu.be/7oSOQ_8l6O8?t=3",
@@ -72,24 +85,27 @@ const tutorials = {
             {
                 title: "Step 1: Yarn over first",
                 description: "Yarn over once before inserting your hook in the next stitch.",
-                image:
-                    "https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=900&q=80",
+                image: dc1,
             },
             {
                 title: "Step 2: Pull up a loop",
                 description: "Insert hook, yarn over, and pull up a loop. You now have three loops.",
-                image:
-                    "https://images.unsplash.com/photo-1617957743098-9dd30e0a4f86?auto=format&fit=crop&w=900&q=80",
+                image: dc2,
             },
             {
                 title: "Step 3: Two pull-throughs",
                 description:
-                    "Yarn over and pull through two loops, then yarn over again and pull through the last two loops.",
-                image:
-                    "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=80",
+                    "Yarn over and pull through two loops",
+                image: dc3,
+            },
+            {
+                title: "Step 4: Last pull-throughs",
+                description:
+                    "Yarn over again and pull through the last two loops.",
+                image: dc4,
             },
         ],
-        video: "https://www.youtube.com/embed/JRwsT5iM0xk",
+        video: "https://youtu.be/y3okh5TB90c?t=129",
     },
     "treble-crochet": {
         title: "How To Create Treble Crochet (TC)",
@@ -98,24 +114,21 @@ const tutorials = {
             {
                 title: "Step 1: Yarn over twice",
                 description: "Wrap yarn over the hook two times before inserting into the stitch.",
-                image:
-                    "https://images.unsplash.com/photo-1616594039964-3cb5d8d9e3ef?auto=format&fit=crop&w=900&q=80",
+                image: tr1,
             },
             {
                 title: "Step 2: Insert and pull up",
                 description: "Insert hook, yarn over, and pull up a loop. You should have four loops.",
-                image:
-                    "https://images.unsplash.com/photo-1618417878474-4504b2a19f0e?auto=format&fit=crop&w=900&q=80",
+                image: tr2,
             },
             {
                 title: "Step 3: Pull through in sets of two",
                 description:
                     "Yarn over and pull through two loops three times until one loop remains.",
-                image:
-                    "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80",
+                image: tr3,
             },
         ],
-        video: "https://www.youtube.com/embed/3y7VwP4-5x8",
+        video: "https://www.youtube.com/watch?v=3KtzjAAZHVY",
     },
     "magic-ring": {
         title: "How To Create Magic Ring",
@@ -125,25 +138,34 @@ const tutorials = {
                 title: "Step 1: Wrap yarn around fingers",
                 description:
                     "Create an X shape with the yarn tail over the working yarn to form the ring.",
-                image:
-                    "https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?auto=format&fit=crop&w=900&q=80",
+                image: mr1,
             },
             {
-                title: "Step 2: Pull up a loop",
+                title: "Step 2: Make up a loop",
                 description:
-                    "Insert hook under the first strand, grab the second strand, and pull up a loop.",
-                image:
-                    "https://images.unsplash.com/photo-1567459169668-95d355371bda?auto=format&fit=crop&w=900&q=80",
+                    "Insert hook under the first strand",
+                image: mr2,
             },
             {
-                title: "Step 3: Crochet into the ring and tighten",
+                title: "Step 3: Pull up a loop",
                 description:
-                    "Work your starting stitches into the ring, then pull the tail to close the center.",
-                image:
-                    "https://images.unsplash.com/photo-1595351298020-038700609878?auto=format&fit=crop&w=900&q=80",
+                    "Grab the second strand, and pull up a loop.",
+                image: mr3,
+            },
+            {
+                title: "Step 4: Crochet into the ring",
+                description:
+                    "Work your starting stitches into the ring",
+                image: mr4,
+            },
+            {
+                title: "Step 5: Crochet into the ring and tighten",
+                description:
+                    "Add more stitches if needed, then pull the tail to close the center.",
+                image: mr5,
             },
         ],
-        video: "https://www.youtube.com/embed/zsWmVcp9RMU",
+        video: "https://youtu.be/zsWmVcp9RMU?t=55",
     },
 };
 
