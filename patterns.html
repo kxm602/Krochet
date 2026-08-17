@@ -39,29 +39,59 @@
           <span class="eyebrow">Pattern library</span>
           <h1>Pick your next crochet pattern</h1>
           <p>
-            Start simple with beginner-friendly projects, or browse seasonal ideas
-            and cozy gifts you can finish in a weekend.
+            Browse patterns or add your own private pattern with a photo and
+            trackable steps.
           </p>
-
           <div class="hero-actions">
-            <a class="btn" href="#">Beginner Patterns</a>
-            <a class="btn" href="#">Saved Patterns</a>
+            <button class="btn primary pattern-add-button" type="button">Add Pattern</button>
+            <button class="btn pattern-export-button" type="button">Export My Patterns</button>
+            <span class="pattern-device-note">Personal patterns stay on this device.</span>
           </div>
         </section>
 
-        <section class="home-cards" aria-label="Pattern categories">
-          <article class="card tone-sage">
-            <h3>Hats & Beanies</h3>
-            <p>Quick projects perfect for gifts and cool-weather practice.</p>
-          </article>
-          <article class="card tone-rose">
-            <h3>Blankets</h3>
-            <p>Chunky and classic blanket ideas with easy-to-follow steps.</p>
-          </article>
-          <article class="card tone-mist">
-            <h3>Amigurumi</h3>
-            <p>Small plush patterns for playful shapes and color experiments.</p>
-          </article>
+        <section class="patterns-browser" aria-label="Free crochet patterns">
+          <div class="patterns-browser-heading">
+            <h2>Pattern library</h2>
+          </div>
+          <div class="pattern-controls">
+            <label class="filter-field" for="patternSearch">
+              <span>Search</span>
+              <input
+                id="patternSearch"
+                type="search"
+                placeholder="Search pattern name or tag"
+              />
+            </label>
+
+            <label class="filter-field" for="difficultyFilter">
+              <span>Difficulty</span>
+              <select id="difficultyFilter">
+                <option value="all">All levels</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Easy">Easy</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </label>
+
+            <label class="filter-field" for="yarnFilter">
+              <span>Yarn weight</span>
+              <select id="yarnFilter">
+                <option value="all">All weights</option>
+                <option value="Lace">Lace</option>
+                <option value="Fingering">Fingering</option>
+                <option value="Sport">Sport</option>
+                <option value="DK">DK</option>
+                <option value="Worsted">Worsted</option>
+                <option value="Bulky">Bulky</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="patternsGrid" class="patterns-grid" aria-live="polite"></div>
+          <p id="patternsEmpty" class="patterns-empty" hidden>
+            No patterns match those filters yet. Try clearing one filter.
+          </p>
         </section>
       </main>
     </div>

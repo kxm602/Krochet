@@ -37,31 +37,30 @@
       <main>
         <section class="hero">
           <span class="eyebrow">Community corner</span>
-          <h1>Share your progress with other crocheters</h1>
+          <h1>Made by hand, shared with heart</h1>
           <p>
-            Post project updates, follow creators you love, and discover fresh
-            pattern ideas from the community feed.
+            A visual feed for crochet progress, finished pieces, and the small
+            wins between the first chain and final stitch.
           </p>
 
           <div class="hero-actions">
-            <a class="btn" href="#">Share a Project</a>
-            <a class="btn" href="#">Explore Community</a>
+            <button class="btn primary social-share-button" type="button">Share a Project</button>
+            <span class="social-device-note">Your posts and activity stay on this device.</span>
           </div>
         </section>
 
-        <section class="home-cards" aria-label="Social features">
-          <article class="card tone-sage">
-            <h3>Progress Posts</h3>
-            <p>Upload snapshots as you crochet and track your milestones.</p>
-          </article>
-          <article class="card tone-rose">
-            <h3>Maker Circles</h3>
-            <p>Follow friends and creators to stay inspired every week.</p>
-          </article>
-          <article class="card tone-mist">
-            <h3>Pattern Shares</h3>
-            <p>Save and swap favorite links from the community timeline.</p>
-          </article>
+        <section class="social-feed" aria-labelledby="socialFeedHeading">
+          <div class="social-feed-heading">
+            <div>
+              <span class="eyebrow">Fresh from the hooks</span>
+              <h2 id="socialFeedHeading">Community feed</h2>
+            </div>
+            <div class="social-feed-tools">
+              <span id="socialPostCount" class="social-post-count">0 posts</span>
+              <button class="btn social-share-button" type="button">New Post</button>
+            </div>
+          </div>
+          <div id="socialGrid" class="social-grid" aria-live="polite"></div>
         </section>
       </main>
     </div>

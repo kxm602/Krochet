@@ -1,0 +1,283 @@
+[
+  {
+    "id": "granny-square-beg",
+    "title": "Beginner Granny Square",
+    "category": "Granny Squares",
+    "difficulty": "Beginner",
+    "yarnWeight": "Worsted",
+    "tags": [
+      "portable",
+      "stash-buster",
+      "classic"
+    ],
+    "image": "https://images.unsplash.com/photo-1473445195763-8673552dbe6f?auto=format&fit=crop&w=1200&q=80",
+    "description": "A simple starter square you can join into blankets, bags, or cardigans.",
+    "sourceName": "Easy Crochet",
+    "licenseNote": "Adapted from commonly shared free granny-square methods.",
+    "materials": [
+      "Worsted cotton or acrylic yarn",
+      "5.0 mm crochet hook",
+      "Scissors",
+      "Yarn needle"
+    ],
+    "instructions": [
+      "Make a magic ring and chain 3 (counts as first double crochet).",
+      "Work 2 double crochets into the ring, chain 2.",
+      "Repeat (3 double crochets, chain 2) three more times into the ring.",
+      "Pull ring tail to close center and slip stitch to top of beginning chain-3.",
+      "For round 2, slip stitch to corner space, chain 3, then work (2 dc, ch 2, 3 dc) in same corner.",
+      "Work 3 dc in each side space and (3 dc, ch 2, 3 dc) in each corner around.",
+      "Fasten off and weave in ends when square reaches desired size."
+    ]
+  },
+  {
+    "id": "simple-dishcloth",
+    "title": "Simple Crochet Dishcloth",
+    "category": "Home",
+    "difficulty": "Beginner",
+    "yarnWeight": "Worsted",
+    "tags": [
+      "quick",
+      "kitchen",
+      "gift"
+    ],
+    "image": "https://images.unsplash.com/photo-1526666923127-b2970f64b422?auto=format&fit=crop&w=1200&q=80",
+    "description": "A quick rectangle pattern great for learning consistent tension.",
+    "sourceName": "Sarah Maker",
+    "licenseNote": "Based on basic free dishcloth stitch patterns.",
+    "materials": [
+      "Worsted cotton yarn",
+      "5.0 mm crochet hook",
+      "Scissors",
+      "Yarn needle"
+    ],
+    "instructions": [
+      "Chain 31 for a small square dishcloth.",
+      "Row 1: Single crochet in second chain from hook and each chain across.",
+      "Chain 1 and turn at the end of each row.",
+      "Rows 2-30: Single crochet in each stitch across.",
+      "Check shape; add or remove rows for a near-square cloth.",
+      "Fasten off leaving a small tail.",
+      "Weave in all ends and block lightly if needed."
+    ]
+  },
+  {
+    "id": "easy-beanie",
+    "title": "Easy Everyday Beanie",
+    "category": "Hats",
+    "difficulty": "Easy",
+    "yarnWeight": "Bulky",
+    "tags": [
+      "winter",
+      "gift",
+      "round"
+    ],
+    "image": "https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=1200&q=80",
+    "description": "Warm beginner-friendly beanie worked in rounds with a fast finish.",
+    "sourceName": "Yarnspirations",
+    "licenseNote": "Inspired by common free beanie constructions.",
+    "materials": [
+      "Bulky yarn (100-120 g)",
+      "6.0 mm crochet hook",
+      "Stitch marker",
+      "Yarn needle"
+    ],
+    "instructions": [
+      "Create a foundation chain that fits around the head comfortably with slight stretch.",
+      "Row 1: Half double crochet in each chain across.",
+      "Rows 2 onward: Work hdc in back loop only for rib texture.",
+      "Continue until panel length matches head circumference.",
+      "Slip stitch short ends together to make a tube.",
+      "Thread yarn through top edge stitches, pull tight to close crown.",
+      "Secure, weave ends, and add pom if desired."
+    ]
+  },
+  {
+    "id": "classic-scarf",
+    "title": "Classic Textured Scarf",
+    "category": "Scarves",
+    "difficulty": "Easy",
+    "yarnWeight": "Worsted",
+    "tags": [
+      "texture",
+      "repetitive",
+      "cozy"
+    ],
+    "image": "https://images.unsplash.com/photo-1475180098004-ca77a66827be?auto=format&fit=crop&w=1200&q=80",
+    "description": "A relaxing row-repeat scarf pattern for everyday wear.",
+    "sourceName": "AllFreeCrochet",
+    "licenseNote": "Adapted from classic beginner scarf stitch repeats.",
+    "materials": [
+      "Worsted yarn (200-250 g)",
+      "5.5 mm crochet hook",
+      "Scissors",
+      "Yarn needle"
+    ],
+    "instructions": [
+      "Chain to desired scarf width, usually 26-34 stitches.",
+      "Row 1: Single crochet across.",
+      "Row 2: Alternate single crochet and double crochet across for texture.",
+      "Repeat row 2 until scarf reaches desired length.",
+      "Maintain even edge tension by counting stitches each row.",
+      "Fasten off and weave in ends.",
+      "Optional: Add fringe at both ends."
+    ]
+  },
+  {
+    "id": "baby-blanket-ripple",
+    "title": "Ripple Baby Blanket",
+    "category": "Blankets",
+    "difficulty": "Intermediate",
+    "yarnWeight": "DK",
+    "tags": [
+      "baby",
+      "stripe",
+      "waves"
+    ],
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+    "description": "Soft ripple stitch pattern ideal for a nursery blanket.",
+    "sourceName": "LoveCrafts",
+    "licenseNote": "Built from standard ripple blanket stitch structure.",
+    "materials": [
+      "DK baby yarn (3-5 skeins)",
+      "4.5 mm crochet hook",
+      "Stitch markers",
+      "Yarn needle"
+    ],
+    "instructions": [
+      "Chain a multiple that supports ripple repeats plus turning stitches.",
+      "Row 1: Work dc pattern with increases at peaks and decreases at valleys.",
+      "Keep markers at each peak and valley to maintain shape.",
+      "Repeat ripple row sequence, changing colors every 2-4 rows if desired.",
+      "Continue until blanket reaches target length.",
+      "Add a simple border of single crochet around all sides.",
+      "Weave in ends and block for even edges."
+    ]
+  },
+  {
+    "id": "market-tote",
+    "title": "Mesh Market Tote",
+    "category": "Bags",
+    "difficulty": "Intermediate",
+    "yarnWeight": "Sport",
+    "tags": [
+      "eco",
+      "mesh",
+      "summer"
+    ],
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80",
+    "description": "Reusable mesh tote with strong handles and stretch.",
+    "sourceName": "Make and Do Crew",
+    "licenseNote": "Based on free mesh market tote constructions.",
+    "materials": [
+      "Sport or cotton yarn (2-3 skeins)",
+      "4.0 mm crochet hook",
+      "Stitch marker",
+      "Yarn needle"
+    ],
+    "instructions": [
+      "Begin with an oval or rectangular base using single crochet rounds.",
+      "Build 4-6 rounds for base stability.",
+      "Transition to mesh: chain 1, skip 1, dc in next stitch around.",
+      "Repeat mesh rounds until tote reaches desired height.",
+      "Work 2-3 solid rounds of single crochet at top edge.",
+      "Create handles by chaining spaces and reinforcing with sc rounds.",
+      "Fasten off and weave in all ends securely."
+    ]
+  },
+  {
+    "id": "amigurumi-octopus",
+    "title": "Mini Amigurumi Octopus",
+    "category": "Amigurumi",
+    "difficulty": "Intermediate",
+    "yarnWeight": "DK",
+    "tags": [
+      "toy",
+      "small",
+      "round"
+    ],
+    "image": "https://images.unsplash.com/photo-1558679908-541bcf1249ff?auto=format&fit=crop&w=1200&q=80",
+    "description": "Small stuffed octopus project with basic shaping techniques.",
+    "sourceName": "Ravelry Free Patterns",
+    "licenseNote": "Simple in-site amigurumi mini pattern for practice.",
+    "materials": [
+      "DK cotton yarn in 2 colors",
+      "3.0 mm crochet hook",
+      "Fiberfill stuffing",
+      "Yarn needle"
+    ],
+    "instructions": [
+      "Round 1: Magic ring, 6 single crochet into ring.",
+      "Round 2: Increase in each stitch (12).",
+      "Round 3: (sc, inc) around (18).",
+      "Rounds 4-8: Single crochet around evenly.",
+      "Add safety eyes or embroider face before closing.",
+      "Stuff firmly and decrease rounds to close body.",
+      "Crochet tentacles separately and stitch to base."
+    ]
+  },
+  {
+    "id": "lace-shawl",
+    "title": "Light Lace Shawl",
+    "category": "Shawls",
+    "difficulty": "Advanced",
+    "yarnWeight": "Fingering",
+    "tags": [
+      "lace",
+      "wearable",
+      "triangle"
+    ],
+    "image": "https://images.unsplash.com/photo-1503342452485-86ff0a7b9e19?auto=format&fit=crop&w=1200&q=80",
+    "description": "Airy triangular shawl with lace repeats and drape.",
+    "sourceName": "Rich Textures Crochet",
+    "licenseNote": "Educational in-site lace shawl outline pattern.",
+    "materials": [
+      "Fingering yarn (2-3 skeins)",
+      "4.0 mm crochet hook",
+      "Stitch markers",
+      "Blocking pins"
+    ],
+    "instructions": [
+      "Start with a magic ring and chain setup for a triangle shawl center.",
+      "Work increase points at center and both edges each row.",
+      "Alternate lace rows (chain spaces) with anchor rows (single crochet).",
+      "Track repeats with markers to avoid misaligned lace motifs.",
+      "Continue repeats until shawl wingspan is desired.",
+      "Finish with a decorative picot or shell border.",
+      "Wet block and pin to open lace pattern fully."
+    ]
+  },
+  {
+    "id": "custom-pattern-8bdf4907-5610-4342-867d-438814d11340",
+    "title": "Retro Daisy Granny Square",
+    "category": "Granny Squares",
+    "difficulty": "Beginner",
+    "yarnWeight": "Worsted",
+    "tags": [
+      "granny square"
+    ],
+    "image": "pattern-images/retro-daisy-granny-square.jpg",
+    "description": "Retro Daisy Granny Square",
+    "sourceName": "Krochet personal library",
+    "licenseNote": "Imported from the site owner’s personal library.",
+    "materials": [
+      "Hook-3.00MM",
+      "Yarn Weight-3 Light",
+      "Tapestry Needle",
+      "Marking Clip"
+    ],
+    "instructions": [
+      "Row 1: Magic Ring, SCx8, sl.st [8]",
+      "Row 2: Chx3(Counts as 1DC), Dc, Dc incx7 [16]",
+      "Row 3: Change a new yarn color, Chx3(Counts as 1DC), Dc inc into the same ST, [Ch, Sk, Dcx3 into the next ST]x7, Ch, Sk, sl.st. [24]",
+      "Row 4: Change a new yarn color, Pull the yarn out of the loop with a slip stitch through the skipped stitches in the round2. Chx3 (Counts as 1DC), Chx4, Sk over to the next Sk St of round2, Dc, [Chx4, Sk over to the next Sk St of round2]x7, Sl.st [40]",
+      "Round 5: Switching back to the round3 yarn color, Pull the loop from the round4 Ch space to place it in front of the round3, Chx3 (Counts as 1DC), [2 dc in next st (from Round 3), 1 dc in last st of cluster] while keeping Round 4 ch stitches pushed to the back. Repeat: [Chx2, skip 1 dc from Round 4, 1 dc in next st, 2 dc in next st, 1 dc in next st] around. End with Ch 2 and sl.st into the top of ch 3.",
+      "Round 6: Switch back to the yarn color from Round 4. Pull up a loop to the front in any ch1 sp. Ch 3 (counts as the first dc), 1 dc in the same st. Repeat:[Ch 5, skip 4 dc, 2 dc in the next dc from Round 4] around. End with ch 5 and sl.st into the top of the ch 3.",
+      "Round 7: Switch back to the yarn color from Round 5. Pull up a loop to the front in any ch5 sp from Round 6. Insert hook through the ch spaces of Round 6 and pull the loop from Round 5 to the front. Chx3 (counts as the first dc). 2 dc in the next st of Round 5. 1 dc in the next 2 sts of the cluster. Repeat:[Ch 2, skip the 2 dc from Round 6, 1 dc in the next st, 2 dc in the next st, 1 dc in the next 2 sts] around. End with ch 2 and sl st into the top of the ch 3.",
+      "Round 8: Continue with the same yarn. Ch 1 (does not count as a stitch). Sc in the first st, sk 1 st, 5 dc in the next st (center dc of the cluster), sk 1 st, sc in the next st. Repeat: [Ch 2, sk the ch-2 space from Round 7, sc in the first st of the next dc cluster, sk 1 st, 5 dc in the next st, sk 1 st, sc in the last st of the dc cluster] around. End with ch 2 and sl.st into the first sc.",
+      "Round 9: Switch back to the yarn color from Round 7. Pull the yarn to the front. Chx3 (counts as the first dc).Work 2 dc in the next st from Round 7. Flip the flower petal (Round 8) downward and work 5 dc into the ch space from Round 7 behind the petal. Flip the petal back up. Work 1 dc in the first dc st and 2 dc in the next dc st in front of the petal (from Round 8). Repeat: [Flip the petal down, work 5 dc in the ch space from Round 7, flip the petal back up, work 1 dc in the first st and 2 dc in the next st in front of the petal] around. End with a sl.st into the top of the starting ch-3.",
+      "Round 10: Chx1 (does not count as a st), Sc in the first st. Sc in the next 5 sts. Hdc in the next st. Dc in the next st. Corner: Work (2 dc, ch 2, 2 dc) in the next st. Dc in the next st. Hdc in the next st. Sc in the next 11 sts. Hdc in the next st. Dc in the next st. Corner: Work (2 dc, ch 2, 2 dc) in the next st. Dc in the next st. Hdc in the next st. Sc in the next 11 sts. Hdc in the next st. Dc in the next st. Corner: Work (2 dc, ch 2, 2 dc) in the next st. Dc in the next st. Hdc in the next st. Sc in the next 11 sts. Hdc in the next st. Dc in the next st. Corner: Work (2 dc, ch 2, 2 dc) in the next st. Dc in the next st. Hdc in the next st. Sc in the last 5 sts. Sl st into the first sc to join.",
+      "Round 11: CHx1 (does not count as a stitch) Hdc into the next 9 sts In the corner CH 2 sp, work (2 DC, CH 2, 2 DC) Hdc into the next 19 sts In the corner CH 2 sp, work (2 DC, CH 2, 2 DC) Hdc into the next 19 sts In the corner CH 2 sp, work (2 DC, CH 2, 2 DC) Hdc into the next 19 sts In the corner CH 2 sp, work (2 DC, CH 2, 2 DC) Hdc into the next 9 sts SL.ST into the first st Fasten off, cut yarn leaving 6-10 inches, and pull yarn tail through the last loop."
+    ]
+  }
+]

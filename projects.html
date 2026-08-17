@@ -37,31 +37,33 @@
       <main>
         <section class="hero">
           <span class="eyebrow">Project tracker</span>
-          <h1>Keep every crochet project organized</h1>
+          <h1>Your works in progress</h1>
           <p>
-            Save yarn details, stitch counts, and row notes so you can pause any
-            project and jump back in without losing your place.
+            Pick up exactly where you left off. Project progress is saved only
+            on this device.
           </p>
 
           <div class="hero-actions">
-            <a class="btn" href="#">Start New Project</a>
-            <a class="btn" href="#">Resume Recent Project</a>
+            <a class="btn primary" href="patterns.html">Browse Patterns</a>
+            <span id="projectCount" class="project-count">0 projects in progress</span>
           </div>
         </section>
 
-        <section class="home-cards" aria-label="Project tools">
-          <article class="card tone-sage">
-            <h3>Current Row</h3>
-            <p>Track where you left off with quick row-by-row updates.</p>
-          </article>
-          <article class="card tone-rose">
-            <h3>Yarn Notes</h3>
-            <p>Store yarn weight, hook size, and color details per project.</p>
-          </article>
-          <article class="card tone-mist">
-            <h3>Finish List</h3>
-            <p>Celebrate completed pieces and keep an archive of your work.</p>
-          </article>
+        <section class="projects-browser" aria-labelledby="projectsHeading">
+          <div class="projects-heading">
+            <div>
+              <span class="eyebrow">Saved on this device</span>
+              <h2 id="projectsHeading">In-progress projects</h2>
+            </div>
+            <a class="btn" href="patterns.html">Start Another</a>
+          </div>
+
+          <div id="projectsGrid" class="projects-grid" aria-live="polite"></div>
+          <div id="projectsEmpty" class="projects-empty" hidden>
+            <h3>No projects started yet</h3>
+            <p>Open a pattern and choose <strong>Start Project</strong> to track it here.</p>
+            <a class="btn primary" href="patterns.html">Find a Pattern</a>
+          </div>
         </section>
       </main>
     </div>
